@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Original Joaco -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos-publicacion-detallada.css">
+
+    <!-- Lo que necesito para el header oficial -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rescate de Patitas</title>
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/datepicker.css"/>
+    <link rel="stylesheet" href="/css/tooplate-style.css">                                   <!-- Templatemo style -->
+    <link href="/css/all.css" rel="stylesheet"> <!--load all styles -->
+</head>
+
+<header>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="/index">
+                                <img src="img/logo.png" alt="Site logo" width="55" height="58">
+                                Rescate de Patitas
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                                    data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+
+                                         <li class="nav-item">
+                                                                        <div class="homebutton">
+                                                                            <a href="/index">Volver al home</a>
+                                                                                                        </div>
+                                                                                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+
+
+<body>
+    <!-- Sidebar filter section -->
+    <section id="sidebar">
+        <form id="mainForm" action="/publicaciones-adopcion-filtradas" method="get" class="form-">
+            <p> Home | <b>Publicaciones</b></p>
+            <div class="border-bottom pb-2 ml-2">
+                <h4 id="burgundy">Filtros</h4>
+            </div>
+            <div class="py-2 border-bottom ml-3">
+                <h6 class="font-weight-bold">Peso</h6>
+                <div id="orange"><span class="fa fa-minus"></span></div>
+                <div class="form-group"><input type="checkbox" id="Menos de 5kg" name="Menos de 5kg" value="Menos de 5kg">
+                    <label for="Menos de 5kg">Menos de 5kg</label></div>
+                <div class="form-group"><input type="checkbox" id="entreCincoYDiezKg" name="Entre 5kg y 10kg"
+                                               value="Entre 5kg y 10kg"> <label
+                        for="entreCincoYDiezKg">entreCincoYDiezKg</label></div>
+                <div class="form-group"><input type="checkbox" id="masDeDiezKg" name="Mas de 10 Kg" value="Mas de 10 Kg">
+                    <label for="masDeDiezKg">masDeDiezKg</label></div>
+            </div>
+            <div class="py-2 border-bottom ml-3">
+                <h6 class="font-weight-bold">Raza de la mascota</h6>
+                <div id="orange"><span class="fa fa-minus"></span></div>
+                <div class="form-group"><input type="checkbox" id="Labrador" name="Labrador" value="Labrador"> <label
+                        for="Labrador">Labrador</label></div>
+                <div class="form-group"><input type="checkbox" id="Caniche" name="Caniche" value="Caniche"> <label
+                        for="Caniche">Caniche</label></div>
+                <div class="form-group"><input type="checkbox" id="Ovejero" name="Ovejero" value="Ovejero"> <label
+                        for="Ovejero">Ovejero</label></div>
+                <div class="form-group"><input type="checkbox" id="Salchicha" name="Salchicha" value="Salchicha"> <label
+                        for="Salchicha">Salchicha</label></div>
+                <div class="form-group"><input type="checkbox" id="Bulldog" name="Bulldog" value="Bulldog"> <label
+                        for="Bulldog">Bulldog</label></div>
+                <div class="form-group"><input type="checkbox" id="Shiba inu" name="Shiba inu" value="Shiba inu"> <label
+                        for="Shiba inu">Shiba inu</label></div>
+                <div class="form-group"><input type="checkbox" id="SinRaza" name="Sin Raza" value="Sin Raza"> <label
+                        for="razaNoRaza">razaNoRaza</label></div>
+            </div>
+            <div class="py-2 ml-3">
+                <h6 class="font-weight-bold">Condicion</h6>
+                <div id="orange"><span class="fa fa-minus"></span></div>
+                <div class="form-group"><input type="checkbox" id="Castrada/o" name="Castrada/o" value="Castrada/o"> <label
+                        for="Castrada/o">Castrada/o</label></div>
+                <div class="form-group"><input type="checkbox" id="No Castrado/a" name="No Castrado/a"
+                                               value="No Castrado/a"> <label for="No Castrado/a">No Castrado/a</label></div>
+            </div>
+            <br><br>
+            <input class="btn btn-primary" type="submit" value="Filtar" form="mainForm">
+        </form>
+    </section>
+
+    <!-- products section -->
+    <section id="products">
+        <div class="container">
+            <div class="d-flex flex-row">
+                <div class="text-muted m-2" id="res"></div>
+                <div class="text-muted m-2" id="res">{{nroResultados}}</div>
+                <div class="ml-auto mr-lg-4">
+                    <div id="sorting" class="border rounded p-1 m-1"><span class="text-muted">Sort by</span> <select
+                            name="sort" id="sort">
+                        <option value="edad"><b>Popularity</b></option>
+                        <option value="raza"><b>Price</b></option>
+                        <option value="peso"><b>Rating</b></option>
+                    </select></div>
+                </div>
+            </div>
+            <div class="row">
+                {{#each publicaciones}}
+                    <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                        <div class="card"><img class="card-img-top" src="{{this.mascota.fotos.0}}">
+                            <div class="card-body">
+                                <h5><b>{{this.mascota.apodo}}</b></h5>
+                                <div class="d-flex flex-row my-2">
+                                    <br>
+                                    <div class="text-muted m-2" id="res">{{this.mascota.caracteristicas}}</div>
+                                </div>
+                                <button class="btn w-100 rounded my-2">Contactar Duenio-Rescatista</button>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

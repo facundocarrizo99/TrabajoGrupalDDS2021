@@ -1,0 +1,86 @@
+<div data-include="headerSinLogIn"></div>
+
+<body>
+    <br>
+    <div style="width:100%; display: flex; justify-content: center;">
+        <h1>Formulario</h1>
+    </div>
+    <br>
+    <br>
+    <div id="parte-uno">
+        <div style="width:100%; display: grid; justify-content: center;">
+            <h4>Estado <input></h4>
+            <br><br>
+            <h4>Lugar donde se encontro</h4>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.095007200572!2d-58.51308188252476!3d-34.599356349001795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7cb900aecc1%3A0x2ce75c056e0a7710!2sPlaza%20Arenales!5e0!3m2!1ses!2sar!4v1630978756232!5m2!1ses!2sar"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <br><br>
+            <h4>Imagenes de la mascota</h4>
+            <h4>
+                <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+                    <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+                </form>
+            </h4>
+
+            <p>Por favor seleccione segun corresponda: Si usted no posee las capacidades para cuidar a la mascota,
+                seleccione Buscar Hogar de Transito. En el caso de poder cuidar a la mascota, seleccione
+                Informacion Personal, donde se le pediran datos de contacto y la direccion donde se estara quedando la
+                mascota temporalmente hasta que el dueño se contacte con usted. Muchas gracias! </p>
+            <a href="/hogares" type="button" class="btn btn-danger">Buscar Hogar de Transito</a><br>
+            <button id="siguiente-parte-uno" type="button" class="btn btn-danger">Informacion Personal</button><br>
+
+
+        </div>
+    </div>
+    <div id="parte-dos" hidden=true>
+        <div style="width:100%; display: grid; justify-content: center;">
+
+            <h4>Nombre y Apellido <input></h4>
+            <br><br>
+            <h4>Fecha de nacimiento <input type="date"></h4>
+            <br><br>
+            <h4>Tipo Documento <select>
+                    <option value="1">DNI</option>
+                    <option value="2">Pasaporte</option>
+                </select></h4><br><br>
+            <h4>Numero Documento <input type="number"></h4><br><br>
+            <h4>Direccion <input type=""></h4><br><br>
+            <h4>Mail <input> <select>
+                    <option value="1">@hotmail.com</option>
+                    <option value="2">@gmail.com</option>
+                </select></h4>
+            <br><br>
+            <h4>Telefono <select>
+                    <option value="1">Argentina (+54)</option>
+                    <option value="2">Brasil (+55) </option>
+                    <option value="2">Chile (+56) </option>
+                    <option value="2">Colombia (+57) </option>
+                    <option value="2">Uruguay (+598) </option>
+                    <option value="2">Venezuela (+58) </option>
+                </select> Numero <input type="number"></h4><br><br>
+            <h3>Formas de contacto</h3><br><br>
+            <h4>SMS <input type="checkbox" style="width: 30px; height: 30px">WhatsApp <input type="checkbox"
+                    style="width: 30px; height: 30px;"> Email <input type="checkbox" style="width: 30px; height: 30px;">
+            </h4><br><br>
+            <button id="atras-parte-dos" type="button" class="btn btn-secondary">Atrás</button><br>
+            <button id="siguiente-parte-tres" type="button" class="btn btn-danger">Finalizar</button><br>
+
+        </div>
+    </div>
+
+    <div id="parte-tres" hidden=true>
+        <div style="width:100%; display: grid; justify-content: center;">
+
+        </div>
+    </div>
+
+</body>
+<div data-include="footer"></div>
+<script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
+<script src="js/base.js"></script>
+<script src="js/registro-de-mascota.js"></script>
+
+</html>

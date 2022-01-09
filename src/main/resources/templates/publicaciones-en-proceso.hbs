@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rescate de Patitas</title>
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css"> <!-- Templatemo style -->
+    <link href="/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+</head>
+
+<header>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <!-- Top Navbar -->
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="/index">
+                            <img src="img/logo.png" alt="Site logo" width="55" height="58">
+                            Rescate de Patitas
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/publicaciones-en-proceso">Publicaciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/hogares">Hogares</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Cerrar sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="homebutton">
+                                        <a href="/index">Volver al home</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <br>
+    <div style="width:100%; display: flex; justify-content: center;">
+        <h1>Publicaciones en revision</h1>
+    </div>
+    <br>
+    <br>
+    <div id="parte-uno">
+        <div style="width:100%; display: grid; justify-content: center;">
+            <h4>
+                <table style="table-layout: fixed; width: 100%;border-collapse: collapse;border: 1px solid #B39DA6;">
+                    <tr
+                        style="background: #ED6969;text-shadow: 1px 1px 1px black;font-size: 24px; text-align: center; color: white;">
+                        <td>Rescatista </td>
+                        <td> Contacto </td>
+                        <td> Encontrada en </td>
+                        <td> Estado de la mascota </td>
+                        <td> Fotos </td>
+                        <td> Accion </td>
+                    </tr>
+                    {{#each publicaciones}}
+                    <tr style="background: #F2EFEF;font-size: 20px; text-align: center; color: black;">
+                        <td> {{aliasRescatista}} </td>
+                        <td> {{formulario.creador.telefono}} </td>
+                        <td> {{formulario.ubicacionHallazgoMascotaPerdida.direccion}} </td>
+                        <td> {{formulario.estadoMascotaPerdida}}</td>
+                        <td>
+                            <div class="tm-article-carousel">
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+	@@ -40,26 +41,27 @@
+                        <td> <button type="button" class="btn btn-danger">Publicar</button> <button type="button"
+                                class="btn btn-danger">Rechazar</button></td>
+                    </tr>
+                   {{/each}}
+                   <!-- <tr style="background: #F2EFEF;font-size: 20px; text-align: center; color: black;">
+                                                    <td> Paula Martinez </td>
+                                                    <td> 1145679830 </td>
+                                                    <td> Plaza Arenales </td>
+                                                    <td> Cansada y hambrienta </td>
+                                                    <td>
+                                                        <div class="tm-article-carousel">
+                                                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                                                <center><img src="img/img-06.jpg" alt="Image" class="img-fluid" width="250"
+                                                                        height="75"></center>
+                                                            </article>
+                                                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                                                <center><img src="img/img-05.jpg" alt="Image" class="img-fluid" width="250"
+                                                                        height="75"></center>
+                                                            </article>
+                                                        </div>
+                                                    </td>
+                                                    <td> <button type="button" class="btn btn-danger">Publicar</button> <button type="button"
+                                                            class="btn btn-danger">Rechazar</button></td>
+                                        </tr> -->
+                </table>
+            </h4>
+        </div>
+    </div>
+</body>
+
+ </html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<div data-include="header"></div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Para la div productos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos-publicacion-detallada.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Ni puta idea -->
+    <script src="https://kit.fontawesome.com/27517fada0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/datepicker.css"/>
+    <link rel="stylesheet" href="/css/tooplate-style.css">                                   <!-- Templatemo style -->
+    <link rel="stylesheet" href="/css/all.css"> <!--load all styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+
+    <title>Rescate de Patitas</title>
+</head>
+
+<header>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <!-- Top Navbar -->
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="/index">
+                            <img src="img/logo.png" alt="Site logo" width="55" height="58">
+                            Rescate de Patitas
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                                data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/mis-mascotas">Mis mascotas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/registro-de-mascota">Registrar mascota</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/mascota-perdida-sin-chapita">Encontre una mascota</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/publicaciones">Publicaciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/publicaciones-adopcion">Adoptar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Cerrar sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="homebutton">
+                                                                        <a href="/index">Volver al home</a>
+                                                                                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <br>
+    <div style="width:100%; display: flex; justify-content: center;">
+        <h1>Mis mascotas</h1>
+    </div>
+    <br>
+    <br>
+    <section id="products">
+        <div class="container">
+            <div class="d-flex flex-row">
+                <div class="text-muted m-2" id="res"></div>
+                <div class="text-muted m-2" id="res">{{nroResultados}}</div>
+                <div class="ml-auto mr-lg-4">
+                    <div id="sorting" class="border rounded p-1 m-1"><span class="text-muted">Sort by</span> <select
+                            name="sort" id="sort">
+                        <option value="edad"><b>Edad</b></option>
+                        <option value="raza"><b>Raza</b></option>
+                        <option value="peso"><b>Peso</b></option>
+                    </select></div>
+                </div>
+            </div>
+            <div class="row">
+                {{#each mascotas}}
+                    <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                        <div class="card"><img class="card-img-top" src="{{this.fotos.0}}">
+                            <div class="card-body">
+                                <h5><b>{{this.apodo}}</b></h5>
+                                <h6><b>Fecha de nacimiento: {{this.fechaDeNacimiento}}</b></h6>
+                                <h6><b>{{this.tipoDeMascota}}{{#if this.esHembra}} Hembra {{else}} Macho {{/if}}</b></h6>
+
+                                <button class="btn w-100 rounded my-2"><i class="fas fa-edit"></i>Editar</button>
+                                <button class="btn w-100 rounded my-2"><i class="fas fa-gift"></i>Dar en adopcion</button>
+                                <button class="btn w-100 rounded my-2"><i class="fas fa-trash"></i>Borrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<div data-include="footer"></div>
+<script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
+<script src="js/base.js"></script>
+<script src="slick/slick.min.js"></script> <!-- http://kenwheeler.github.io/slick/ -->
+
+
+</html>

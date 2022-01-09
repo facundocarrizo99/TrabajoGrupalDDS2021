@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<General>
+    <passwordScoreMinimo>3</passwordScoreMinimo>
+    <passwordLengthMinimo>6</passwordLengthMinimo>
+    <refugioddsapitoken>"i+EgYsPBFVnRAbLQvlMu2nGLZqbAtADYaXk1FhDcORBWNKh5jAW8Q/qhPFXbaIkrtUIz0FPi4ZkxIoMwtKY8DQ=="</refugioddsapitoken>
+    <sendgridapikey>"3ZVO1m5jV5cj65s2VY7vkj+2EKHWJmS1JlVPKBsfUN+s3izYrr8ZuFENXzwKaXzO9+OHAYKVSjKxCMPNTsFHd/rXWFWXR6BD"</sendgridapikey>
+</General>

@@ -1,0 +1,10 @@
+.idea
+target/*
+*.log
+src/main/resources/META-INF/persistence.xml
+pom.xml
+
+
+src/main/resources/META-INF/persistence.xml
+src/main/resources/META-INF/persistence.xml
+src/main/resources/META-INF/persistence.xml
